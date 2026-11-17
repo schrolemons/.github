@@ -1,0 +1,37 @@
+name: 问题反馈
+description: 报告可复现的问题
+body:
+  - type: markdown
+    attributes:
+      value: 请先阅读项目README。日志和示例中不要包含凭据、个人配置或真实聊天记录。
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      description: 使用的Release版本、提交号或安装方式。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 使用环境
+      description: 操作系统、客户端及相关运行时版本。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 用最少步骤说明如何触发问题。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 已脱敏的必要日志或截图

@@ -1,0 +1,22 @@
+name: 功能建议
+description: 说明使用场景与需要解决的问题
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: 使用场景
+      description: 当前在哪个操作中遇到困难？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望的变化
+      description: 描述理想结果，也可以补充现有替代方法。
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: 其他信息
+      description: 相关版本、限制或示例；请勿包含私有资料。
